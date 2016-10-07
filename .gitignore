@@ -36,10 +36,10 @@
 *.msg
 *.kdev4
 *~
-.kdev4
+*.kdev4
 build
 BUILD
-.kdev4/
+*.kdev4/
 build/
 BUILD/
 

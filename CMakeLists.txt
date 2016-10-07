@@ -8,6 +8,6 @@ set(VCG_DIR ~/manuelb_ws/src/vcglib/)
 include_directories( ${VCG_DIR} )
 
 
-add_executable(${PROJECT_NAME}  src/mvbb_tridecimator.cpp ${VCG_DIR}/wrap/ply/plylib.cpp src/mvbb_decimator.cpp)
-add_executable(${PROJECT_NAME}_all  src/mvbb_decimator_all.cpp ${VCG_DIR}/wrap/ply/plylib.cpp src/mvbb_decimator.cpp)
+add_executable(${PROJECT_NAME}  examples/mvbb_tridecimator.cpp ${VCG_DIR}/wrap/ply/plylib.cpp src/mvbb_decimator.cpp)
+
 

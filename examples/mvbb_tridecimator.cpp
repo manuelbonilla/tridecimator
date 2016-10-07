@@ -11,7 +11,7 @@ int main(int argc ,char**argv)
   std::string file_name(argv[1]);
   std::string file_name_no_extension = file_name.substr(0, file_name.size()-4);
   
-  
+  std::cout << "Working on file: " << file_name << std::endl;
   Eigen::MatrixXd eigen_vertex = mesh_decimator.getEigenVertices();
 
   vcg::tri::io::ExporterPLY<MyMesh>::Save(mesh_decimator.mesh, (file_name_no_extension + std::string("_reduced.ply")).c_str());
