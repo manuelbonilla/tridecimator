@@ -15,6 +15,7 @@ void MVBBDecimator::decimateTriMesh(string filename,
     int err=vcg::tri::io::Importer<MyMesh>::Open(mesh, filename.c_str());
     if(err)
     {
+      std::cout << "Not possible to open file: " << filename << std::endl;
       exit(-1);
     }
 
